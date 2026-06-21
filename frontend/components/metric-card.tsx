@@ -1,0 +1,1 @@
+export function MetricCard({label,value,delta}:{label:string;value:string;delta:string}){return <div className="glass rounded-3xl p-6"><p className="text-sm text-slate-400">{label}</p><div className="mt-3 flex items-end justify-between"><h3 className="text-3xl font-semibold">{value}</h3><span className="text-sm text-emerald-300">{delta}</span></div></div>}
