@@ -1,0 +1,3 @@
+import Link from 'next/link';
+const links = [['/dashboard','Dashboard'], ['/tickets','Tickets'], ['/analytics','Analytics'], ['/settings','Settings']];
+export function Sidebar(){return <aside className="glass fixed left-6 top-6 h-[calc(100vh-3rem)] w-64 rounded-3xl p-6"><div className="text-xl font-semibold">TriageOS</div><p className="mt-2 text-sm text-slate-400">AI support command center</p><nav className="mt-10 grid gap-2">{links.map(([href,label])=><Link className="rounded-2xl px-4 py-3 text-slate-300 hover:bg-white/10 hover:text-white" key={href} href={href}>{label}</Link>)}</nav></aside>}
